@@ -1,0 +1,262 @@
+﻿@model InterPi.Models.Front.EditionModel
+
+<div class="jumbotron">
+
+    <h2>Édition 2017 : La guerre de <img class="fff" src="~/Content/Images/youtube.PNG" /></h2>
+
+    <hr class="my-4" />
+
+    <h3>Historique</h3>
+    <div class="paragraph">
+        En 2017, nous avons lancé la 1ère édition de l’InterPiHo. A cette époque-là, l’organisation regroupait le staff pionniers de Rebecq et de Braine-le-Comte. Quelques 90 pis étaient présents lors du Jour J et pour l’organisation, cette 1ère édition était une vraie réussite. Cette édition s’est déroulée à Louvain-la-Neuve, le 18 février 2017. De 10h à 20h, les pionniers, préalablement mis par groupes et mêlés à d’autres unités, ont dû relever des défis, engranger des points et faire preuve de créativité et de courage pour devenir la personnalité avec le plus d’abonnés sur YouTube. Cette journée s’était clôturée sur un bon hot-dog dans le bas de la Voie des Gaumais et sur la victoire d’un groupe composé majoritairement de Rebecquois.
+    </div>
+    <div class="paragraph">
+        L’idée de cette journée a d’abord germé dans la tête des animateurs pionniers de Braine-le-Comte, en fin d’année 2016. Ils ont fait part de leur envie à leurs collègues rebecquois et c’est ainsi que cette aventure commune a débuté. Pour cette première édition, nous avons pu compter sur le soutien et la participation de postes de notre région (Brunehault) ainsi que sur le soutien de nombreux animateurs. Après la réussite d’une 1ère édition, comment refuser de continuer l’aventure l’année d’après ?!
+    </div>
+    <div class="text-center">
+        Allez jeter un œil à la galerie photos en bas de la page !
+    </div>
+
+    <iframe class="center-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10115.177028385902!2d4.6118324!3d50.66808045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c17e05f083ac27%3A0x171325f53f02977e!2sLouvain-la-Neuve%2C+1348+Ottignies-Louvain-la-Neuve!5e0!3m2!1sfr!2sbe!4v1540383783967" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <br>
+        <button class="info center-block" onclick="callAjax()">Afficher la gallerie </button>
+</div>
+
+
+<div id="FB">
+
+</div>
+
+@*@if (Model.listImage.Count > 0)
+    {
+
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            @for (int i = 0; i <= (int)Model.listImage.Count / 3; i++)
+            {
+
+                <img src=@Model.listImage.ElementAt(i) class="" onclick="infos('@Model.listImage.ElementAt(i).Split('/').Last().Split('.').First()')" />
+                <div id="@Model.listImage.ElementAt(i).Split('/').Last().Split('.').First()" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="halt('@Model.listImage.ElementAt(i).Split('/').Last().Split('.').First()')">&times;</span>
+                        <div>
+                            <img src=@Model.listImage.ElementAt(i) class="imgModal"/>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            @for (int i = (int)Model.listImage.Count / 3; i <= (int)Model.listImage.Count * 2 / 3; i++)
+            {
+
+                <img src=@Model.listImage.ElementAt(i) class="" onclick="infos('@Model.listImage.ElementAt(i).Split('/').Last().Split('.').First()')" />
+                <div id="@Model.listImage.ElementAt(i).Split('/').Last().Split('.').First()" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="halt('@Model.listImage.ElementAt(i).Split('/').Last().Split('.').First()')">&times;</span>
+                        <div>
+                            <img src=@Model.listImage.ElementAt(i) class="imgModal"/>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-3">
+            @for (int i = (int)Model.listImage.Count * 2 / 3; i < (int)Model.listImage.Count; i++)
+            {
+
+                <img src=@Model.listImage.ElementAt(i) class="" onclick="infos('@Model.listImage.ElementAt(i).Split('/').Last().Split('.').First()')" />
+                <div id="@Model.listImage.ElementAt(i).Split('/').Last().Split('.').First()" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="halt('@Model.listImage.ElementAt(i).Split('/').Last().Split('.').First()')">&times;</span>
+                        <div>
+                            <img src=@Model.listImage.ElementAt(i) class="imgModal"/>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }*@
+
+
+<style>
+
+    .imgModal {
+        max-height: 60%;
+        max-width: 100%
+    }
+
+    .text-center {
+        font-size: medium;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .paragraph {
+        text-align: justify;
+        font-size: small;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h5 {
+        font-size: large;
+    }
+
+    img {
+        width: 100%;
+        margin: 5px;
+        border-color: black;
+        border-width: thin;
+        position: center;
+    }
+
+
+    .fff {
+        width: 70%;
+    }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%; /* Could be more or less, depending on screen size */
+        color: black;
+    }
+
+    /* The Close Button */
+    .close {
+        color: rgb(0,0,0);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+</style>
+<script>
+
+    function offsetChanged() { }
+
+
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    function infos(id) {
+        // modal.style.display = "block";
+        document.getElementById(id).style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    function halt(id) {
+        document.getElementById(id).style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function callAjax() {
+       // alert("start");
+        $.ajax({
+            type: "GET",
+            url: "/api/API/2017",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data, textStatus, xhr) {
+                //alert("succes");
+                creationImage(data);
+            },
+            failure: function (response) {
+                //alert("fail");
+            },
+            error: function (response) {
+                //alert(response.responseText);
+            }
+        });
+    }
+    function CreationID(line) {
+       // console.log(line);
+        line = line.toString();
+        var lineSpit = line.split("/");
+        var name = lineSpit[lineSpit.length - 1].split(".");
+      //  console.log("retour de nom : "+ name[0]);
+        return name[0];
+    }
+
+    function creationImage(data) {
+        var div = document.getElementById("FB").innerHTML;
+        var images = Array.from(data);
+       // alert(images);
+
+        var str = "<div class=\"col-md-4 col-sm-6 col-lg-3\">";
+
+        for (i = 0;  i <= images.length / 3; i++) {
+            var id = CreationID(images[i]);
+            str += " <img src=" + images[i] + " onclick=\"infos('" + id + "')\" />";
+            str += "<div id=\"" + id + "\" class=\"modal\">";
+            str += "<div class=\"modal - content\">";
+            str += " <span class=\"close\" onclick=\"halt('" + id + "')\">&times;</span>";
+            str += "<div><img src=" + images[i] + " class=\"imgModal\"/></div></div></div>";
+        }
+        str += "</div>";
+        str += "<div class=\"col-md-4 col-sm-6 col-lg-3\">";
+        for (i = parseInt(images.length/3);  i <= images.length * 2 / 3; i++) {
+            var id = CreationID(images[i]);
+            str += " <img src=" + images[i] + " onclick=\"infos('" + id + "')\" />";
+            str += "<div id=\"" + id + "\" class=\"modal\">";
+            str += "<div class=\"modal - content\">";
+            str += " <span class=\"close\" onclick=\"halt('" + id + "')\">&times;</span>";
+            str += "<div><img src=" + images[i] + " class=\"imgModal\"/></div></div></div>";
+        }
+        str += "</div>";
+        str += "<div class=\"col-md-4 col-sm-6 col-lg-3\">";
+        for (i = parseInt(images.length*2/3); i < images.length; i++) {
+            var id = CreationID(images[i]);
+            str += " <img src=" + images[i] + " onclick=\"infos('" + id + "')\" />";
+            str += "<div id=\"" + id + "\" class=\"modal\">";
+            str += "<div class=\"modal - content\">";
+            str += " <span class=\"close\" onclick=\"halt('" + id + "')\">&times;</span>";
+            str += "<div><img src=" + images[i] + " class=\"imgModal\"/></div></div></div>";
+        }
+        str += "</div>";
+        document.getElementById("FB").innerHTML += str;
+    }
+</script>

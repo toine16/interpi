@@ -1,0 +1,104 @@
+﻿@model InterPi.Models.Front.InscriptionPart2Model
+
+@{
+    ViewBag.Title = "InscriptionPart2";
+}
+
+<h2>Inscription Partie 2</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal" id="form1">
+    <table class="table table-hover" id="table">
+        <thead>
+            <tr>
+                <th scope="col">N°</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Prenom</th>
+                <th scope="col">Totem</th>
+                <th scope="col">Poste</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.NbrParticipants; i++)
+            {
+                <tr class="table-active">
+                    <th scope="row">@i</th>
+                    <td>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MesParticipants[i].Nom, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MesParticipants[i].Prenom, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MesParticipants[i].Totem, new { htmlAttributes = new { @class = "form-control" } })
+                        </div>
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(model => model.MesParticipants[i].Role, new SelectList(new string[] { "Animé", "Animateur"}), new { htmlAttributes = new { @class = "form-control" } })
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Valider" id="btn" class="btn btn-default" onclick="envoyerFormulaire()" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script>
+    function envoyerFormulaire() {
+        var ajax = new XMLHttpRequest();
+        if (ajax == null) return;
+        var data = new FormData(document.getElementById("form1"));
+        ajax.open("POST", "@Url.Action("InscriptionPart2")", true);
+        ajax.onreadystatechange = function () {
+            réponseAjax(ajax);
+        };
+        ajax.send(data);
+    }
+    function réponseAjax(ajax) {
+        if (ajax.readyState != 4) return;
+        if (ajax.status != 200) return;
+        alert(ajax);
+    }
+
+
+     @*$(document).ready(function () {
+        $("#btn").click(function () {
+            $.ajax({
+                url: '@Url.Action("InscriptionPart2")',
+                type: 'POST',
+                traditional:true,
+                data: { 'data=value 1&data=value 2&data=value 3'},
+                dataType: "json",
+                success: function (response) {
+                    alert(response);
+                },
+                error: function (xhr) {
+                    debugger;
+                    alert(xhr);
+
+                }
+            });
+        });
+    });*@
+</script>

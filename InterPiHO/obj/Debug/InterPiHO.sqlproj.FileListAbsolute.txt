@@ -1,0 +1,6 @@
+C:\Users\Antoine\source\repos\InterPi.WEB\InterPiHO\bin\Debug\InterPiHO.dacpac
+C:\Users\Antoine\source\repos\InterPi.WEB\InterPiHO\bin\Debug\InterPiHO.dll
+C:\Users\Antoine\source\repos\InterPi.WEB\InterPiHO\bin\Debug\InterPiHO.pdb
+C:\Users\Antoine\source\repos\InterPi.WEB\InterPiHO\obj\Debug\InterPiHO.dll
+C:\Users\Antoine\source\repos\InterPi.WEB\InterPiHO\obj\Debug\InterPiHO.pdb
+C:\Users\Antoine\source\repos\InterPi.WEB\InterPiHO\obj\Debug\InterPiHO.sqlprojAssemblyReference.cache

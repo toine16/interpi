@@ -1,0 +1,27 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Créer
+       [dbo].[Edition] (Table)
+       [dbo].[EditionParticipants] (Table)
+       [dbo].[EditionTroupe] (Table)
+       [dbo].[Participants] (Table)
+       [dbo].[Payement] (Table)
+       [dbo].[Troupes] (Table)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Payement] (Contrainte par défaut)
+       [dbo].[FK_EditionParticipants_Participants] (Clé étrangère)
+       [dbo].[FK_EditionParticipants_Edition] (Clé étrangère)
+       [dbo].[FK_EditionTroupe_Troupes] (Clé étrangère)
+       [dbo].[FK_EditionTroupe_Edition] (Clé étrangère)
+       [dbo].[FK_Participants_Troupes] (Clé étrangère)
+       [dbo].[FK_Payement_Troupes] (Clé étrangère)
+
+** Actions de support

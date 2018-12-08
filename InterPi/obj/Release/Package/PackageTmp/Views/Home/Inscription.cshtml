@@ -1,0 +1,110 @@
+﻿@model InterPi.Models.Front.InscriptionModel
+
+@{
+    ViewBag.Title = "Inscription";
+}
+
+<h2>Inscription</h2>
+<p class="info">
+    Les inscriptions, c’est ici que ça se passe ! Les inscriptions seront clôturées le<em>15 janvier 2019 à minuit.</em> <br />
+    Cependant, il ne suffit pas de remplir ce formulaire pour vous inscrire. Après avoir rempli celui-ci, vous recevrez un mail avec les détails du paiement. Une fois le paiement réalisé, votre groupe sera officiellement inscrit à la 3e édition de l’InterPiHo, qui s’annonce encore plus folle !
+</p>
+
+@using (Html.BeginForm("Inscription", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="col-md-8">
+        <div class="form-group">
+            @Html.LabelFor(model => model.NomSection, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.NomSection, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NomSection, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Lieu, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.Lieu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Lieu, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Telephone, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.Telephone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Telephone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Mail, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.Mail, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Mail, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NbrAnimateurs, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.NbrAnimateurs, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NbrAnimateurs, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NbrAnimes, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                @Html.EditorFor(model => model.NbrAnimes, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NbrAnimes, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FilePath, htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="col-md-9">
+                <input type="file" name="File" class="form-control-file" maxlength="4000000" />
+                Listing à fournir maintenant ou plus tard par mail - 4 Mo maximum<br />
+                Au minimum : nom, prénom, date de naissance et numéro de téléphone
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <img src="~/Content/Images/inscription.png" />
+    </div>
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Valider" class="btn btn-default" />
+        </div>
+    </div>
+   
+</div>
+           
+}
+
+<div>
+    @Html.ActionLink("Retour à la case départ", "Index")
+</div>
+
+<style>
+    img{
+        width : 100%;
+        max-width:200px;
+    }
+
+    h2
+    {
+        margin-left:20px;
+    }
+</style>

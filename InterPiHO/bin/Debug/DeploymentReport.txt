@@ -1,0 +1,30 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Créer
+       [dbo].[Edition] (Table)
+       [dbo].[EditionParticipants] (Table)
+       [dbo].[EditionTroupe] (Table)
+       [dbo].[Mail] (Table)
+       [dbo].[Participants] (Table)
+       [dbo].[Role] (Table)
+       [dbo].[Telephone] (Table)
+       [dbo].[Troupes] (Table)
+       [dbo].[FK_EditionParticipants_Participants] (Clé étrangère)
+       [dbo].[FK_EditionParticipants_Edition] (Clé étrangère)
+       [dbo].[FK_EditionTroupe_Troupes] (Clé étrangère)
+       [dbo].[FK_EditionTroupe_Edition] (Clé étrangère)
+       [dbo].[FK_Mail_Troupes] (Clé étrangère)
+       [dbo].[FK_Participants_Troupes] (Clé étrangère)
+       [dbo].[FK_Participants_Role] (Clé étrangère)
+       [dbo].[FK_Telephone_Troupes] (Clé étrangère)
+
+** Actions de support

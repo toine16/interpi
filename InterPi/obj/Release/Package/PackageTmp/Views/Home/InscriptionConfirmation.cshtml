@@ -1,0 +1,70 @@
+﻿@model InterPi.Models.Front.InscriptionModel
+
+<h4>Confirmation de votre inscription</h4>
+
+<div>
+    <p>
+        Nous vous confirmons que vous êtes bien inscrit pour l'édition 2019 de l'InterPiHo.
+        Toutefois, votre inscription ne sera définitive que lorsque vous aurez effectué le payement
+        (les informations relatives à celui-ci vous seront envoyées par mail plus tard),
+        ainsi que fourni un listing de vos participants. 
+    </p>  
+    <p>
+        Pour toutes modifications de votre inscription et pour nous envoyer le listing de vos animés, 
+       merci d'utiliser l'adresse suivante : <a href="mailto:antoine.brousmiche@gmail.com">Support</a>
+    </p>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomSection)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomSection)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lieu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lieu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telephone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NbrAnimateurs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NbrAnimateurs)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NbrAnimes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NbrAnimes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Retour à la case départ", "Index")
+</p>

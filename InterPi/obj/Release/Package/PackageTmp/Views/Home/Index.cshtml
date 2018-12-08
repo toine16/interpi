@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Page d'accueil";
+}
+
+@Styles.Render("~/Content/index")
+<div class="jumbotron">
+    <h1>InterPiHo</h1>
+    <p class="lead">Qu'est que l'InterPiHo</p>
+
+    <marquee align="center" height="200px" scrolldelay="5" scrollamount="3"
+             onmouseout="this.start()" onmouseover="this.stop()" backgroundcolor="black">
+        <p>
+            <img border="0" src="~/Content/InterPi2018/IMGP3801.jpg" alt="" hspace="0">
+            <img border="0" src="~/Content/Images/bnd20173.jpg" alt="" hspace="0">
+            <img border="0" src="~/Content/InterPi2018/IMGP3773.jpg" alt="" hspace="0">
+            <img border="0" src="~/Content/Images/bnd20172.jpg" alt="" hspace="0">
+            <img border="0" src="~/Content/InterPi2018/IMGP3766.jpg" alt="" hspace="0">
+
+        </p>
+    </marquee>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Tout savoir sur cette année</h2>
+        <p>
+            Venez découvrir tout ce qu'il faut savoir sur l'édition de cette année: lieu, prix, thème, organisation et plein d'autres choses...
+        </p>
+        <p>@Html.ActionLink("Cette année", "Edition2019", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Découvrir les éditions précédentes</h2>
+        <p>
+            Envie de savoir ce qu'est l'interPiHo ? N'hésitez pas à venir faire un tour pour voir le résumé des éditions précédentes.
+            Matez les photos prises durant l'événement et/ou remémorez-vous de bons souvenirs !
+
+        </p>
+        <p>@Html.ActionLink("Foncer voir", "Edition2017", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>S'inscrire</h2>
+        <p>
+            Alors tenté ? Suivez vite ce lien, c'est par ici que se passent les inscriptions ;)
+        </p>
+        <p>@Html.ActionLink("Inscription", "Inscription", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Créer
+       [dbo].[Payement] (Table)
+       Contrainte par défaut: contrainte sans nom sur [dbo].[Payement] (Contrainte par défaut)
+       [dbo].[FK_Payement_Troupes] (Clé étrangère)
+
+** Actions de support

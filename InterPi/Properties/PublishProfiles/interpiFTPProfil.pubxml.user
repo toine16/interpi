@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ce fichier est utilisé par le processus de publication/package de votre projet web. Vous pouvez personnaliser le comportement de ce processus
+en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, visitez https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Antoine\Documents\httpdocs</_PublishTargetUrl>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj7g5Yphl3EyoMEmbUqPWagAAAAACAAAAAAAQZgAAAAEAACAAAACyUdoKg8cc+AwjE315iD7zMpVSvujPFLiZg3Kea5k4PgAAAAAOgAAAAAIAACAAAAA6ZDP4ldb4gL8pNoqhl/sv9YaF3IekGmY364p8CyBWbSAAAACwZNfd9hpHbt8q9JMCdQoEEj0gHv4oVKLGpbeGjcnC2kAAAACbWNo8kcMtkh2AHdaM8K4JeP2bdrIew8R2zbjy+OUNlu23FdnBq2nV4tSHWHLpbIX6RyZdlQLPtxzuzj1kEqcD</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>10/15/2018 23:37:35</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/09/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>10/09/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>10/15/2018 23:37:35</publishTime>
+    </File>
+    <File Include="bin/fr/System.Web.Helpers.resources.dll">
+      <publishTime>01/02/2018 12:21:08</publishTime>
+    </File>
+    <File Include="bin/fr/System.Web.Mvc.resources.dll">
+      <publishTime>01/02/2018 12:16:44</publishTime>
+    </File>
+    <File Include="bin/fr/System.Web.Optimization.resources.dll">
+      <publishTime>11/02/2014 15:28:42</publishTime>
+    </File>
+    <File Include="bin/fr/System.Web.Razor.resources.dll">
+      <publishTime>01/02/2018 12:17:06</publishTime>
+    </File>
+    <File Include="bin/fr/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>01/02/2018 12:21:08</publishTime>
+    </File>
+    <File Include="bin/fr/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>01/02/2018 12:21:08</publishTime>
+    </File>
+    <File Include="bin/fr/System.Web.WebPages.resources.dll">
+      <publishTime>01/02/2018 12:21:08</publishTime>
+    </File>
+    <File Include="bin/Google.Protobuf.dll">
+      <publishTime>12/21/2017 21:23:44</publishTime>
+    </File>
+    <File Include="bin/InterPi.dll">
+      <publishTime>12/07/2018 15:02:35</publishTime>
+    </File>
+    <File Include="bin/InterPi.pdb">
+      <publishTime>12/07/2018 15:02:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>06/27/2017 12:59:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>02/22/2018 15:25:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>02/22/2018 15:36:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>02/22/2018 13:39:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>02/22/2018 15:35:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>02/22/2018 15:36:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>02/22/2018 13:36:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
+      <publishTime>06/28/2017 15:05:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>10/16/2017 14:14:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>09/26/2018 09:42:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 08:44:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.Process.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.DriveInfo.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Thread.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>12/13/2017 21:09:38</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>07/19/2017 10:01:30</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 03:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/02/2018 11:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 03:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 03:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/02/2018 11:16:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/02/2014 14:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/02/2018 11:16:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/02/2018 11:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/02/2018 11:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/02/2018 11:20:56</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 12:57:34</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>10/16/2018 00:23:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Content/bootstrapThemePerso.css">
+      <publishTime>10/16/2018 00:00:18</publishTime>
+    </File>
+    <File Include="Content/Images/bas.jpg">
+      <publishTime>10/21/2018 01:05:45</publishTime>
+    </File>
+    <File Include="Content/Images/bnd20171.jpg">
+      <publishTime>10/17/2018 13:42:39</publishTime>
+    </File>
+    <File Include="Content/Images/bnd20172.jpg">
+      <publishTime>10/17/2018 13:42:39</publishTime>
+    </File>
+    <File Include="Content/Images/bnd20173.jpg">
+      <publishTime>10/17/2018 13:42:39</publishTime>
+    </File>
+    <File Include="Content/Images/bnd20174.jpg">
+      <publishTime>10/17/2018 13:42:39</publishTime>
+    </File>
+    <File Include="Content/Images/CaSeDitScout.PNG">
+      <publishTime>10/30/2018 17:56:27</publishTime>
+    </File>
+    <File Include="Content/Images/favicon.ico">
+      <publishTime>11/07/2018 17:01:19</publishTime>
+    </File>
+    <File Include="Content/Images/gang.png">
+      <publishTime>10/18/2018 23:22:28</publishTime>
+    </File>
+    <File Include="Content/Images/gang2.jpg">
+      <publishTime>10/18/2018 23:22:28</publishTime>
+    </File>
+    <File Include="Content/Images/inscription.png">
+      <publishTime>11/14/2018 17:47:46</publishTime>
+    </File>
+    <File Include="Content/Images/logo.jpg">
+      <publishTime>11/07/2018 17:36:12</publishTime>
+    </File>
+    <File Include="Content/Images/logot.png">
+      <publishTime>11/14/2018 17:47:16</publishTime>
+    </File>
+    <File Include="Content/Images/mail.jpg">
+      <publishTime>10/31/2018 16:07:07</publishTime>
+    </File>
+    <File Include="Content/Images/work.png">
+      <publishTime>10/31/2018 16:21:58</publishTime>
+    </File>
+    <File Include="Content/Images/youtube.PNG">
+      <publishTime>11/14/2018 23:26:38</publishTime>
+    </File>
+    <File Include="Content/index.css">
+      <publishTime>10/17/2018 13:55:58</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int1.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int10.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int11.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int12.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int13.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int14.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int15.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int16.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int17.jpg">
+      <publishTime>10/18/2018 00:48:19</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int18.jpg">
+      <publishTime>10/18/2018 00:48:19</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int19.jpg">
+      <publishTime>10/18/2018 00:48:19</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int2.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int20.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int21.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int22.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int23.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int24.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int25.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int26.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int27.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int28.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int29.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int3.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int30.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int31.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int32.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int33.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int34.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int35.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int36.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int37.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int38.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int39.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int4.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int40.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int41.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int42.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int43.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int44.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int45.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int46.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int47.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int48.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int49.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int5.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int50.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int51.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int52.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int53.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int54.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int55.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int56.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int57.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int58.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int59.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int6.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int60.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int61.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int62.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int63.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int64.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int65.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int66.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int67.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int68.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int69.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int7.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int70.jpg">
+      <publishTime>10/18/2018 00:48:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int8.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2017/int9.jpg">
+      <publishTime>10/18/2018 00:48:18</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3682.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3683.JPG">
+      <publishTime>11/14/2018 17:51:57</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3684.JPG">
+      <publishTime>11/14/2018 17:52:19</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3685.JPG">
+      <publishTime>11/14/2018 17:52:45</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3686.JPG">
+      <publishTime>11/14/2018 17:54:07</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3689.JPG">
+      <publishTime>11/13/2018 23:24:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3690.JPG">
+      <publishTime>11/14/2018 17:55:41</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3691.JPG">
+      <publishTime>11/14/2018 17:56:03</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3692.JPG">
+      <publishTime>11/14/2018 17:56:54</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3695.JPG">
+      <publishTime>11/14/2018 17:57:19</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3697.JPG">
+      <publishTime>11/14/2018 17:57:46</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3698.JPG">
+      <publishTime>11/14/2018 17:58:20</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3721.JPG">
+      <publishTime>11/14/2018 17:58:39</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3723.JPG">
+      <publishTime>11/14/2018 17:59:06</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3724.JPG">
+      <publishTime>11/14/2018 17:59:23</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3725.JPG">
+      <publishTime>11/14/2018 17:59:48</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3726.JPG">
+      <publishTime>11/14/2018 18:00:08</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3727.JPG">
+      <publishTime>11/14/2018 18:00:43</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3728.JPG">
+      <publishTime>11/14/2018 18:01:16</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3729.JPG">
+      <publishTime>11/14/2018 18:01:36</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3730.JPG">
+      <publishTime>11/14/2018 18:02:01</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3731.JPG">
+      <publishTime>11/14/2018 18:02:25</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3734.JPG">
+      <publishTime>11/14/2018 18:03:02</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3735.JPG">
+      <publishTime>11/14/2018 18:03:29</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3736.JPG">
+      <publishTime>11/14/2018 18:04:21</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3737.JPG">
+      <publishTime>11/14/2018 18:05:31</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3740.JPG">
+      <publishTime>11/14/2018 18:06:59</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3741.JPG">
+      <publishTime>11/14/2018 18:07:27</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3742.JPG">
+      <publishTime>11/14/2018 18:07:51</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3743.JPG">
+      <publishTime>11/14/2018 18:08:21</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3744.JPG">
+      <publishTime>11/14/2018 18:08:47</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3745.JPG">
+      <publishTime>11/14/2018 18:09:24</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3747.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3748.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3749.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3750.JPG">
+      <publishTime>11/14/2018 18:09:51</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3751.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3752.JPG">
+      <publishTime>11/14/2018 18:10:12</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3753.JPG">
+      <publishTime>11/14/2018 18:10:39</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3754.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3755.JPG">
+      <publishTime>11/14/2018 18:11:05</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3756.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3757.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3758.JPG">
+      <publishTime>11/14/2018 18:11:37</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3760.JPG">
+      <publishTime>11/14/2018 18:11:54</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3761.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3762.JPG">
+      <publishTime>11/14/2018 18:12:56</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3763.JPG">
+      <publishTime>11/14/2018 18:13:15</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3764.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3765.JPG">
+      <publishTime>11/14/2018 18:13:51</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3766.JPG">
+      <publishTime>11/14/2018 18:14:07</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3767.JPG">
+      <publishTime>11/14/2018 18:14:28</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3768.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3769.JPG">
+      <publishTime>11/14/2018 18:14:58</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3770.JPG">
+      <publishTime>11/14/2018 18:15:50</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3771.JPG">
+      <publishTime>10/30/2018 17:38:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3773.JPG">
+      <publishTime>11/14/2018 18:16:11</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3775.JPG">
+      <publishTime>11/14/2018 18:16:25</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3778.JPG">
+      <publishTime>11/14/2018 18:16:40</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3779.JPG">
+      <publishTime>11/14/2018 18:16:55</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3800.JPG">
+      <publishTime>11/14/2018 18:17:17</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3801.JPG">
+      <publishTime>11/14/2018 18:19:53</publishTime>
+    </File>
+    <File Include="Content/InterPi2018/IMGP3807.jpg">
+      <publishTime>11/14/2018 18:17:32</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>10/17/2018 13:23:46</publishTime>
+    </File>
+    <File Include="Content/Sponsors/Attestation-sponsor-InterPiHo.pdf">
+      <publishTime>12/05/2018 17:54:16</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>10/15/2018 23:36:32</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/15/2018 23:36:32</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>10/15/2018 23:37:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>10/15/2018 23:37:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>10/15/2018 23:37:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>10/15/2018 23:37:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>10/15/2018 23:37:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>10/15/2018 23:37:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>10/15/2018 23:37:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>10/15/2018 23:37:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>10/15/2018 23:37:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>10/15/2018 23:37:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/15/2018 23:37:27</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>10/15/2018 23:37:23</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>10/15/2018 23:36:32</publishTime>
+    </File>
+    <File Include="Views/Home/Admin.cshtml">
+      <publishTime>10/21/2018 00:45:07</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>11/08/2018 16:32:34</publishTime>
+    </File>
+    <File Include="Views/Home/Edition2017.cshtml">
+      <publishTime>11/22/2018 16:45:42</publishTime>
+    </File>
+    <File Include="Views/Home/Edition2018.cshtml">
+      <publishTime>11/22/2018 16:45:57</publishTime>
+    </File>
+    <File Include="Views/Home/Edition2019.cshtml">
+      <publishTime>11/21/2018 18:48:42</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>11/22/2018 17:00:12</publishTime>
+    </File>
+    <File Include="Views/Home/Inscription.cshtml">
+      <publishTime>11/07/2018 19:17:53</publishTime>
+    </File>
+    <File Include="Views/Home/InscriptionConfirmation.cshtml">
+      <publishTime>12/05/2018 18:11:25</publishTime>
+    </File>
+    <File Include="Views/Home/Sponsors.cshtml">
+      <publishTime>12/05/2018 18:14:55</publishTime>
+    </File>
+    <File Include="Views/Home/Summarize.cshtml">
+      <publishTime>12/07/2018 14:56:43</publishTime>
+    </File>
+    <File Include="Views/Home/SummarizeEdit.cshtml">
+      <publishTime>01/11/2018 23:25:41</publishTime>
+    </File>
+    <File Include="Views/Old/TableauInscriptionold.cshtml">
+      <publishTime>10/21/2018 00:52:48</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>10/15/2018 23:36:32</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/05/2018 17:53:21</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>10/15/2018 23:36:32</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>10/15/2018 23:36:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/07/2018 15:00:38</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

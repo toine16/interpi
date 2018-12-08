@@ -1,0 +1,96 @@
+﻿@using InterPi.Models.Back
+@model InterPi.Models.Front.SummarizeModel
+
+@{
+    ViewBag.Title = "Summarize";
+}
+
+<h2>Summarize</h2>
+
+<div>
+    <hr />
+
+    <table class="table table-hover" id="table">
+        <thead>
+            <tr>
+                <th scope="col">Nom Section</th>
+                <th scope="col">Ville</th>
+                <th scope="col">Mail</th>
+                <th scope="col">Telephone</th>
+                <th scope="col">Animateurs</th>
+                <th scope="col">Animés</th>
+                <th scope="col">Editer</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Troupe p in Model.Troupes)
+            {
+            <tr class="table-active">
+                <td>
+                    <div class="col-md-10">
+                        <p>@p.NomSection</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="col-md-10">
+                        <p>@p.Lieu</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="col-md-10">
+                        <p>@p.Mail</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="col-md-10">
+                        <p>@p.Telephone</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="col-md-10">
+                        <p>@p.NbrAnimateurs</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="col-md-10">
+                        <p>@p.NbrAnimes</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="col-md-10">
+                        <img src="~/Content/Images/bas.jpg" class="btn-outline-info" onclick="Editer(@p.Id)" />
+                    </div>
+                </td>
+            </tr>
+            }
+            <tr>
+                <td>
+                    Nombre total de participants 
+                </td>
+                <td>
+                    @Model.TotalParticipants
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+    <dl class="dl-horizontal"></dl>
+</div>
+<p>
+    @Html.ActionLink("Retour", "Index")
+</p>
+
+<style>
+    img
+    {
+        height : 20px;
+    }
+</style>
+<script>
+    function Editer(id) {
+    //    document.location.href = "www.interpiho.be/Home/SummarizeEdit?id=" + id;
+    }
+</script>
